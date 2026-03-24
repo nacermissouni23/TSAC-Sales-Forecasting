@@ -1,0 +1,25 @@
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Data files
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.feather
+*.json
+*.zip
+*.gz
+*.bz2
+*.pkl
+*.joblib
+
+# Local environment files
+.env
+.venv/
+venv/
