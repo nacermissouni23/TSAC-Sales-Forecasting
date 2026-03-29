@@ -1,31 +1,32 @@
-# TSAC Individual Project – Walmart Sales Forecasting
+# Walmart Weekly Sales Forecasting (TSAC)
 
-## Abstract
-This project analyzes the "Walmart Cleaned Sales Dataset" to perform **time series forecasting** of retail sales. The goal is to explore trends, seasonal patterns, and anomalies in the dataset and to produce accurate forecasts using models such as ARIMA, SARIMA, and Prophet. Although the dataset is retail-focused, the techniques applied are directly relevant to forecasting revenue or service adoption in industries like telecommunications.
+This is my TSAC 2025/2026 individual project on time-series forecasting using Walmart weekly sales data.
 
-## Project Description
-**Dataset source:** [Kaggle – Walmart Cleaned Sales Dataset](https://www.kaggle.com/datasets/ujjwalchowdhury/walmartcleaned)  
-**Objective:** Forecast weekly or monthly sales, identify trends and seasonal effects, and evaluate model performance  
-**Scope:**  
-1. Load and explore the dataset  
-2. Specify candidate time series models  
-3. Fit models and perform diagnostics  
-4. Forecast future sales  
-5. Discuss findings and limitations  
+The notebook covers the full workflow in one place:
+- data loading, cleaning, and weekly aggregation
+- exploratory analysis (trend, seasonality, holiday effect)
+- model comparison: ARIMA, SARIMA, and Prophet
+- holdout validation on the last 26 weeks
+- 20-week forecast with 95% confidence intervals
 
-**Languages/Tools:** Python or R, Jupyter Notebook / Google Colab, Pandas, NumPy, Matplotlib, Seaborn, Statsmodels, Prophet  
+Dataset source: [Kaggle - Walmart Cleaned Sales Dataset](https://www.kaggle.com/datasets/ujjwalchowdhury/walmartcleaned)
 
-## Project Structure
-TSAC_Walmart_Project/
-│
-├─ data/ # Raw and processed datasets
-├─ notebooks/ # Colab notebooks
-├─ src/ # Python or R scripts
-├─ results/ # Graphs, tables, forecasts
-├─ docs/ # Written report
-└─ README.md # Project description
+## Project structure
+- `data/` - input dataset (`walmart_cleaned.csv`)
+- `notebooks/` - main analysis notebook (`TSAC_Walmart_Analysis.ipynb`)
+- `results/` - exportable figures/tables (currently placeholder)
+- `src/` - scripts (currently placeholder)
+- `dataset.md` - dataset description
+- `tsa workflow.md` - TSA workflow notes
 
+## Quick start
+1. Activate your virtual environment (optional).
+2. Install dependencies with `pip install -r requirements.txt`.
+3. Open and run `notebooks/TSAC_Walmart_Analysis.ipynb` from top to bottom.
 
-## Contact
-- **Author:** Nacer Eddine Missouni
-- **Purpose:** TSAC 2025/2026 - Individual Project in Time Series Analysis
+Note:
+- For local runs, use the dataset at `data/walmart_cleaned.csv`.
+- For Colab runs, keep the Google Drive path used in the notebook.
+
+## Author
+Nacer Eddine Missouni
